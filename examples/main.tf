@@ -3,6 +3,7 @@ resource "random_string" "launch_id" {
   special = false
   upper   = false
   }
+  
 locals {
   suffix = format("%s-%s", "tf", random_string.launch_id.result)
 }
