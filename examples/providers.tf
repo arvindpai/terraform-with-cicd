@@ -1,8 +1,8 @@
 terraform {
   required_version = ">= 0.13.1" # see https://releases.hashicorp.com/terraform/
   backend "gcs" {
-    bucket = "cloudorbit"
-    prefix = "main"
+    bucket = "intuitive-lab-test-tf-states"
+    prefix = "test-github-actions"
   }
   required_providers {
     google = {
